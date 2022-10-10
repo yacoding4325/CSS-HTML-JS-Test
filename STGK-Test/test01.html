@@ -104,7 +104,7 @@
 		访问过的链接显示为紫色并带有下划线。
 		点击链接时，链接显示为红色并带有下划线。
 		 -->
-		 <a href="https://www.runoob.com/" target="_blank">访问菜鸟教程</a>
+		 <a href="https://www.runoob.com/" target="_blank" style="text-decoration:none;">访问菜鸟教程</a>
 		 
 		 
 		<!-- HTML 链接- id 属性id 属性可用于创建一个 HTML 文档书签。提示: 书签不会以任何特殊方式显示，即在 HTML 页面中是不显示的，所以对于读者来说是隐藏的。-->
@@ -148,7 +148,290 @@
 
 		<p>HTML <link> 元素<link> 标签定义了文档与外部资源之间的关系。<link> 标签通常用于链接到样式表:</p>
 		
+		<h2>07.表格设定</h2>
+		<!-- HTML 表格 -->
+		<!-- 表格由 <table> 标签来定义。每个表格均有若干行（由 <tr> 标签定义），每行被分割为若干单元格（由 <td> 标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。
+		数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。 -->
 		
+		<h4>一列:</h4>
+		<table border="1">
+		  <tr>
+		    <td>100</td>
+		  </tr>
+		</table>
+		 
+		<h4>一行三列:</h4>
+		<table border="1">
+		  <tr>
+		    <td>100</td>
+		    <td>200</td>
+		    <td>300</td>
+		  </tr>
+		</table>
+		 
+		<h4>两行三列:</h4>
+		<table border="1">
+		  <tr>
+		    <td>100</td>
+		    <td>200</td>
+		    <td>300</td>
+		  </tr>
+		  <tr>
+		    <td>400</td>
+		    <td>500</td>
+		    <td>600</td>
+		  </tr>
+		</table>
+		
+		<table border="1">
+		    <tr>
+		        <td>row 1, cell 1</td>
+		        <td>row 1, cell 2</td>
+		    </tr>
+		    <tr>
+		        <td>row 2, cell 1</td>
+		        <td>row 2, cell 2</td>
+		    </tr>
+		</table>
+		
+		<br>
+	
+		<table border="2">
+			<tr>
+			    <td>row 3, cell 3</td>
+			    <td>row 3, cell 3</td>
+			</tr>
+			<tr>
+			    <td>row 2, cell 1</td>
+			    <td>row 2, cell 2</td>
+			</tr>
+			
+		</table>
+		<hr>
+		
+		
+		<h4>这个表格没有边框:</h4>
+		<table>
+		<tr>
+		  <td>100</td>
+		  <td>200</td>
+		  <td>300</td>
+		</tr>
+		<tr>
+		  <td>400</td>
+		  <td>500</td>
+		  <td>600</td>
+		</tr>
+		</table>
+		
+		<h4>这个表格没有边框:</h4>
+		<table border="0">
+		<tr>
+		  <td>100</td>
+		  <td>200</td>
+		  <td>300</td>
+		</tr>
+		<tr>
+		  <td>400</td>
+		  <td>500</td>
+		  <td>600</td>
+		</tr>
+		</table>
+		
+		<hr>
+		<table border="1">
+		<tr>
+		  <th>Name</th>
+		  <th>Telephone</th>
+		  <th>Telephone</th>
+		</tr>
+		<tr>
+		  <td>Bill Gates</td>
+		  <td>555 77 854</td>
+		  <td>555 77 855</td>
+		</tr>
+		</table>
+		
+		
+		<h4>垂直标题:</h4>
+		<table border="2">
+		<tr>
+		  <th>First Name:</th>
+		  <td>Bill Gates</td>
+		</tr>
+		<tr>
+		  <th>Telephone:</th>
+		  <td>555 77 854</td>
+		</tr>
+		<tr>
+		  <th>Telephone:</th>
+		  <td>555 77 855</td>
+		</tr>
+		</table>
+		
+		<!-- HTML 列表 -->
+		<!-- HTML无序列表无序列表是一个项目的列表，此列项目使用粗体圆点（典型的小黑圆圈）进行标记。无序列表使用 <ul> 标签 -->
+		<!-- HTML 有序列表同样，有序列表也是一列项目，列表项目使用数字进行标记。 
+		有序列表始于 <ol> 标签。每个列表项始于 <li> 标签。列表项使用数字来标记。-->
+		<h4>无序列表:</h4>
+		<ul>
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ul>
+		<hr>
+		
+		<h3>有序列表</h3>
+		<ol>
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ol>
+		
+		<h3>嵌套列表</h3>
+		<ul>
+		  <li>Cool</li>
+		  <li>Tea
+		    <ul>
+		      <li>Green tea</li>
+		      <li>Red tea</li>
+		    </ul>
+		  </li>
+		  <li>Milk</li>
+		</ul>
+		
+		<!-- HTML <div> 和<span> -->
+		<!-- 大多数 HTML 元素被定义为块级元素或内联元素。
+		块级元素在浏览器显示时，通常会以新行来开始（和结束）。
+		实例: <h1>, <p>, <ul>, <table> -->
+		
+		<!-- HTML 内联元素
+		内联元素在显示时通常不会以新行开始。
+
+		实例: <b>, <td>, <a>, <img>
+
+		HTML <div> 元素
+		HTML <div> 元素是块级元素，它可用于组合其他 HTML 元素的容器。<div> 元素没有特定的含义。除此之外，由于它属于块级元素，浏览器会在其前后显示折行。
+
+		如果与 CSS 一同使用，<div> 元素可用于对大的内容块设置样式属性。
+
+		<div> 元素的另一个常见的用途是文档布局。它取代了使用表格定义布局的老式方法。使用 <table> 元素进行文档布局不是表格的正确用法。
+		<table> 元素的作用是显示表格化的数据。
+		HTML <span> 元素
+		HTML <span> 元素是内联元素，可用作文本的容器
+		<span> 元素也没有特定的含义。
+
+		当与 CSS 一同使用时，<span> 元素可用于为部分文本设置样式属性。 -->
+		<hr><br>
+		<div id="container" style="width:500px">
+		
+		<div id="header" style="background-color:#FFA500;">
+		<h1 style="margin-bottom:0;">今天你好吗！</h1></div>
+		
+		<div id="menu" style="background-color:#FFD700;height:200px;width:100px;float:left;">
+		<b>内容</b>
+		<br>
+			HTML<br>
+			CSS<br>
+			JavaScript
+		</div>
+		
+		<div id="content" style="background-color:#EEEEEE;height:200px;width:400px;float:left;">
+		今天天气真好</div>
+		
+		<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+		版权 © runoob.com</div>
+		
+		</div>
+		<br>
+		<hr>
+		
+		<!-- 表单实例 -->
+		<form action="">
+		First name: <input type="text" name="firstname"><br>
+		Last name: <input type="text" name="lastname">
+		</form>
+		
+		<hr>
+		<!-- 文本域 -->
+		<form>
+		 username: <input type="text" name="username"><br>
+		 password: <input type="text" name="password">
+		</form>
+		<br>
+		 
+		 <form action="">
+		 <input type="radio" name="sex" value="male">男<br>
+		 <input type="radio" name="sex" value="female">女
+		 </form>
+		 
+		 <form>
+		 <input type="checkbox" name="vehicle" value="Bike">自行车<br>
+		 <input type="checkbox" name="vehicle" value="Car">汽车
+		 </form>
+		 
+		 <br><hr>
+		 
+		 <!-- 以下表单使用 GET 请求发送数据到当前的 URL，method 默认位 GET。 -->
+		 <form>
+		   <label>Name:
+		     <input name="submitted-name" autocomplete="name">
+		   </label>
+		   <button>Save</button>
+		 </form>
+		 
+		 <!-- 以下表单使用 POST 请求发送数据到当前的 URL。 -->
+		 <form method="post">
+		   <label>Name:
+		     <input name="submitted-name" autocomplete="name">
+		   </label>
+		   <button>Save</button>
+		 </form>
+		 
+		 <!-- 表单使用 fieldset, legend, 和 label 标签 -->
+		 <!-- <form method="post">
+		   <fieldset>
+		     <legend>Title</legend>
+		     <label><input type="radio" name="radio"> Select me</label>
+		   </fieldset>
+		 </form> -->
+		 <hr><br>
+		 
+		 <h3>09.html框架</h3>
+		 <p>在凶险海域环绕中，诸多同盟省份在一片被称为“初生之土”的庞大群岛上组成了<a href="" target="_top"><strong><big>艾欧尼亚</big></strong></a>。
+		 追寻万物的平衡是这里长久以来的文化基调，因此物质与精神领域之间的界限也在这里若有若无，在野外的森林和山脉中尤为如此。
+		虽然这片土地上的魔力可能变幻无常，栖息着的生物也可能危险而神奇，但在过去的几百年中，<a href="" target="_top">艾欧尼亚</a>的居民一直过着富足的生活。
+		习武的僧院、各省的民兵团、甚至就连<a href="" target="_top">艾欧尼亚</a>这片土地本身，都已经足够保护当地的居民。
+		但那一切都在十二年前结束了，因为那一年，诺克萨斯出兵攻打了“初生之土”。
+		一望无际的帝国大军在<a href="" target="_top">艾欧尼亚</a>肆虐，<a href="" target="_top">艾欧尼亚</a>人经过多年的苦战才以巨大的代价击败敌人。
+		如今的<a href="" target="_top">艾欧尼亚</a>正处于脆弱的和平中。对于那场战争的不同应对，让这片土地产生了分裂——有一些团体，
+		例如朔极的武僧和均衡教派，想要回归与世隔绝的和平以及田园牧歌的传统。另一些比较激进的派系，
+		例如纳沃利兄弟会和影流，则主张对这片土地的魔法进行军事化改造，建立一个统一的国家，强大到足以对诺克萨斯实施打击报复。
+		<a href="" target="_top">艾欧尼亚</a>的命运正悬在微妙的平衡中，几乎无人愿意使其倒向任何一边，但所有人都能感到脚下的土地在蠢动不安</p>
+		
+		<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+		<p><a href="https://www.baidu.com" target="iframe_a" rel="noopener">BAIDU.COM</a></p></b><br><hr>
+		 
+		 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- 开始css的学习 -->
+		<style>
+			h1 {color:red;}
+			p {color:blue;}
+		</style>
 		
 		
 		
