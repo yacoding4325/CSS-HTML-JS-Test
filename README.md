@@ -2,7 +2,7 @@
 实例解析
 
 
-<!DOCTYPE html> 声明为 HTML5 文档
+##<!DOCTYPE html> 声明为 HTML5 文档
 <html> 元素是 HTML 页面的根元素
 <head> 元素包含了文档的元（meta）数据，如 <meta charset="utf-8"> 定义网页编码格式为 utf-8。
 <title> 元素描述了文档的标题
