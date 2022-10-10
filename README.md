@@ -12,10 +12,12 @@
 注：在浏览器的页面上使用键盘上的 F12 按键开启调试模式，就可以看到组成标签。
 
 
-#什么是HTML?
+##什么是HTML?
 HTML 是用来描述网页的一种语言。
+![image](https://user-images.githubusercontent.com/82166879/194794035-87c5e075-0ad3-4b32-bdba-4ba55da63cf8.png)
 
-#HTML 指的是超文本标记语言: HyperText Markup LanguageHTML 不是一种编程语言，而是一种标记语言标记语言是一套标记标签 (markup tag)
+
+###HTML 指的是超文本标记语言: HyperText Markup LanguageHTML 不是一种编程语言，而是一种标记语言标记语言是一套标记标签 (markup tag)
 HTML 使用标记标签来描述网页
 HTML 文档包含了HTML 标签及文本内容
 HTML文档也叫做 web 页面
