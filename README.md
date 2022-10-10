@@ -44,4 +44,6 @@ HTML 元素:
 Web浏览器（如谷歌浏览器，Internet Explorer，Firefox，Safari）是用于读取HTML文件，并将其作为网页显示。
 
 浏览器并不是直接显示的HTML标签，但可以使用标签来决定如何展现HTML页面的内容给用户：
+![image](https://user-images.githubusercontent.com/82166879/194794104-95c0fc86-5ec0-4724-b68b-8274c095393a.png)
+
 
