@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	<title>css的样式</title>
+	
+	<!-- 外部样式 style.css -->
+	<link rel="stylesheet" type="text/css" href="http://static.runoob.com/assets/css/css-howto/style.css"/>
+	
+	<!-- 设置：h3{color:blue;} -->
+	<style type="text/css">
+		
+	/* 内部样式 */
+	h3{color:green;}
+	</style>
+	
+	</head>
+	<style>
+		
+		h1   {
+			font-size:36pt;
+		}
+		
+		h2   
+		{
+			color:red;
+		}
+		
+		#top
+		{
+			color:red;
+			text-align:center;
+		} 
+		
+		/* .center
+		{
+			text-align:center;
+		} */
+		
+		p.center
+		{
+			text-align:center;
+		}
+		
+		a.one:link 
+		{
+			color:#ff0000;
+		}
+		a.one:visited 
+		{
+			color:#0000ff;
+		}
+		a.one:hover 
+		
+		{
+			color:#ffcc00;
+		}
+		
+		a.two:link 
+		{
+			color:#ff0000;
+		}
+		
+		a.two:visited 
+		{
+			color:#0000ff;
+		}
+		
+		a.two:hover {
+			font-size:150%;
+		}
+		
+		a.three:link {
+			color:#ff0000;
+		}
+		
+		a.three:visited {
+			color:#0000ff;
+		}
+		
+		a.three:hover {
+			background:#66ff66;
+		}
+		
+		a.four:link {
+			color:#ff0000;
+		}
+		a.four:visited 
+		{
+			color:#0000ff;
+		}
+		
+		a.four:hover 
+		{
+			font-family:Georgia, serif;
+		}
+		
+		a.five:link 
+		{
+			color:#ff0000;text-decoration:none;
+		}
+		
+		a.five:visited 
+		{
+			color:#0000ff;text-decoration:none;
+		}
+		
+		a.five:hover 
+		{
+			text-decoration:underline;
+		}
+	</style>
+	
+	<h1>这个标题设置的大小为 40 pt</h1>
+	<h2>这个标题设置的颜色为蓝色：blue</h2>
+	<p>这个不受影响</p>
+	<p id="top">这个段落的左外边距为 50 像素：50px</p> 
+	
+	<!-- class 选择器
+	class 选择器用于描述一组元素的样式，class 选择器有别于id选择器，class可以在多个元素中使用。
+	class 选择器在 HTML 中以 class 属性表示, 在 CSS 中，类选择器以一个点 . 号显示：
+	在以下的例子中，所有拥有 center 类的 HTML 元素均为居中。
+	 -->
+	 
+	 <h1 class="center">这个标题不受影响</h1>
+	 <p class="center">这个段落居中对齐。</p> 
+	
+	<!-- 如何插入样式表 -->
+	<!-- 外部样式表(External style sheet)
+	内部样式表(Internal style sheet)
+	内联样式(Inline style) -->
+	
+	<h3>显示绿色，是内部样式</h3>
+	
+	<p>将鼠标移至链接上改变样式.</p>
+	
+	<p><b><a class="one" href="/css/" target="_blank">这个链接改变颜色</a></b></p>
+	<p><b><a class="two" href="/css/" target="_blank">这个链接改变字体大小</a></b></p>
+	<p><b><a class="three" href="/css/" target="_blank">这个链接改变背景颜色</a></b></p>
+	<p><b><a class="four" href="/css/" target="_blank">这个链接改变字体类型</a></b></p>
+	<p><b><a class="five" href="/css/" target="_blank">这个链接改变文字修饰</a></b></p>
+	
+	
+</html>
