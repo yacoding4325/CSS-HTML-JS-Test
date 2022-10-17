@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<script>
+			/* 
+			 * 能除尽,则默认结果就是一个整数,不能除尽,结果默认就是浮点数
+			 * 除零不会出现异常,而是出现 Infinity
+			 * 和0取余数,出现NaN  not a number 不是一个数字
+			 * */
+			 
+			var a = 3;
+			var b = 1;
+			alert(a==b);
+			 
+			alert(10/3);
+			alert(10/0);
+			alert(10%3);
+			alert(10%0);  
+			  
+		   /*
+			* +号中 如果一段是字符串,就变成了文字拼接
+			* 数字和 boolean类型相加  true会转变成1  false会转变成0  再做数学运算
+			* */
+		   var i=1;
+		   alert(i+1);//2
+		   alert(1+"1");//11
+		   alert(1+true);//2
+			
+			
+			/*
+			 * == 等值符
+			 * 先比较类型,如果类型一致,则比较值是否相同
+			 * 如果类型不一致,会将数据尝试转换number 再比较内容
+			 * */
+			var a =1;
+			var b="1";
+			var c=true;
+			var d="true";
+			alert(a==b)// t
+			alert(a==c)// t
+			alert(a==d)// f
+			alert(b==c)// t
+			alert(b==d)// f
+			alert(c==d)// f
+			
+			/*
+			 * === 等同符
+			 * 如果数据类型不同,直接返回false  如果类型相同,才会继续比较内容
+			 * 
+			 * */
+			var a =1;
+			var b="1";
+			var c=true;
+			var d="true";
+			alert(a===b)//f
+			alert(a===c)//f
+			alert(a===d)//f
+			alert(b===c)//f
+			alert(b===d)//f
+			alert(c===d)//f
+			alert("asdf"==="asdf")//t
+		</script>
+
+	</head>
+	<body>
+	</body>
+</html>
