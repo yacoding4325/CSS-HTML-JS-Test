@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<script type="text/javascript">
+			var arr=[11,22,33];
+			console.log(arr)
+			console.log(arr[0]);
+            console.log(arr.length)
+			
+			/** JS中的数组是可以通过修改length属性来改变数组长度的*/
+			arr.length=5;
+			console.log(arr)
+			/** JS的数组可以通过索引改变数组的长度* */
+			arr[9]=99;
+			console.log(arr);
+			
+			//遍历--数组
+			var arr2=[5,7,3,1,6,2,4,9,8];
+			//使用for循环
+			for(var i = 0; i<=arr2.length; i++) {
+				console.log(arr2[i]);
+			}
+			
+			/*
+			 *foreach循环遍历数组
+			 * JS 中foreach写法为  for( var i in 数组)
+			 * i 不是元素  是索引
+			 * */
+			for (var i in arr2){
+					console.log(arr2[i])
+			}
+			
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
