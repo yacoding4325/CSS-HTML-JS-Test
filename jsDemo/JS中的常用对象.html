@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			// 根据索引获取字符
+			var str ="hello js";
+			var c =str.charAt(6);
+			console.log(c)
+			
+			//拼接字符串
+			var a = "hi";
+			var b = "good";
+			var c = "China";
+			
+			var d = c.concat(a,b);
+			console.log(d)
+			
+			var e ="adsf";
+			var f=e.repeat(3);//重复拼接
+			console.log(f)
+			
+			 // 截取字符串
+			var g="helloJhon";
+			var h=g.substr(1,5);// 从哪里开始,连续截取多少个字符
+			console.log(h)
+			
+			// 包头不包尾
+			var i=g.substring(1,7);// 从哪里开始,到哪里结束
+			console.log(i)
+			
+			// 获取长度
+			console.log(g.length)// length属性
+			
+			
+			// JS中非常特殊的一个函数,可以将一段字符串当做JS代码来执行
+			// 将字符串内容解析称JS代码并运行
+			var testStr=" var x =10 ";
+			eval(testStr);
+			console.log(x)
+			
+			//Number的常用属性和方法(包装类)
+			//数字方法
+			console.log(Number.MAX_VALUE)//1.7976931348623157e+308
+			console.log(Number.MIN_VALUE)//5e-324
+			console.log(Number.MAX_SAFE_INTEGER)//9007199254740991
+			console.log(Number.MIN_SAFE_INTEGER)//-9007199254740991
+			
+			
+			console.log(Number.parseFloat("10.123")+20);//30.122999999999998
+			console.log(Number.parseInt("30")+20);//50
+			
+			var i = 10%0;
+			var j = 10/0;
+			console.log(i)//NaN
+			console.log(j)//Infinity
+			console.log(Number.isNaN(i)) // is not a number 是不是NAN  t
+			console.log(Number.isFinite(j))//f
+			console.log(Number.isSafeInteger(Number.MAX_VALUE))//f
+			console.log(Number.isSafeInteger(Number.MAX_SAFE_INTEGER))//t
+ 
+			// var d = new Date();
+			// var d = new Date(milliseconds);
+			// var d = new Date(dateString);
+			// var d = new Date(year, month, day, hours, minutes, seconds, milliseconds);
+			
+			
+			console.log(Math.round(3.64))
+			console.log(Math.floor(3.14))// 地板数
+			console.log(Math.ceil(3.01))// 天花板数
+			console.log(Math.max(1,2,3,5.6))
+			console.log(Math.min(1,2,3,5.6))
+			console.log(Math.random())
+			console.log(Math.sqrt(16))
+			// 属性
+			console.log(Math.PI)
+			// 生成给定范围内的随机数
+			
+			var start =10;
+			var end =16;
+			var result =Math.floor(Math.random()*(end-start+1)+start);
+			console.log(result)//15
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

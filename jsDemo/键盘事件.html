@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<script>
+			
+			function fun1() {
+				console.info("按钮按下")
+			}
+			
+			function fun2() {
+				console.info("按钮松开")
+			}
+			
+			function fun3() {
+				console.info("按钮按下并抬起")
+			}
+		</script>
+	</head>
+	<body>
+        <input type="text" onkeydown="fun1()" onkeyup="fun2()" onkeypress="fun3()" />
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<script>
+			/**
+			 * JSON var 对象名 ={属性名:属性值,属性名:属性值, ... ... ,方法名:方法声明,方法名:方法声明}
+			 */
+			var person = {
+				name:"晓明",
+				gender:"男",
+				age:10, 
+				eat:function(food) {
+					console.log(this.age+"岁的"+this.gender+"孩儿"+this.name+"正在吃"+food)	
+				}
+			};
+			//查看对象属性
+			//调用对象方法
+			console.log(person.name)
+			console.log(person.gender)
+			console.log(person.age)
+			person.eat("馒头")
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

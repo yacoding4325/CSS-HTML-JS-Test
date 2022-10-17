@@ -22,6 +22,19 @@
 		var element=document.getElementById("header");
 		element.innerHTML="新标题";
 		
+		//对事件做出反应
+		function changetext(id){
+			id.innerHTML="Ooops!";
+		}
+		
+		//例题--电灯泡
+		function lighton(){
+			document.getElementById('myimage').src="img/bulboff.gif";
+		}
+		function lightoff(){
+			document.getElementById('myimage').src="img/bulboff.giff";
+		}
+		
 		</script>
 		
 	<body>
@@ -45,6 +58,16 @@
 		<h1 id="id1">我的标题 1</h1>
 		<button type="button" onclick="document.getElementById('id1').style.color='red'">
 		大爷，来玩啊！！！!</button>
+		
+		<h1 onclick="changetext(this)">点击文本!</h1>
+		
+		<img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="img/bulboff.gif" width="100" height="180" />
+		<p>点击不释放鼠标灯将一直亮着!</p>
+		
+		
+		<h1 onmouseover="style.color='red'"onmouseout="style.color='black'">将鼠标移至文本上</h1>
+
+
 		
 	</body>
 </html>

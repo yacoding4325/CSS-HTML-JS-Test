@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			
+			//实例化对象
+			var obj = new Object();
+			
+			//给对象添加属性
+			obj.name="罗帅";
+			obj.age=35;
+			obj.gender="男"; 
+			
+			//给对象添加方法
+			obj.eat = function(food) {
+				console.log(this.name+"正在吃"+food)	
+			}
+			
+			//查看对象属性
+			console.log(obj.name);
+			console.log(obj.age);
+			console.log(obj.gender);
+			
+			//调用对象方法
+			obj.eat("蛋糕");
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

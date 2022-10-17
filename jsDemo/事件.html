@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.d1
+			{
+				width: 100px;
+				height: 100px;
+				background-color: greenyellow;
+			}
+		</style>
+	</head>
+	
+	<script>
+		
+		function fun1() {
+			console.log("双击666")
+		}
+		
+		function fun2() {
+			console.log("鼠标按下")
+		}
+		
+		function fun3() {
+			console.log("鼠标抬起")
+		}
+		
+		function fun4() {
+			console.log("鼠标进入")
+		}
+		
+		function fun5() {
+			console.log("鼠标离开")
+		}
+		
+		function fun6() {
+			console.log("鼠标移动")
+		}
+		
+		function fun7() {
+			console.log("fun()被执行。。。")
+		}
+		
+	</script>
+	<body>
+		
+		<div class="d1" 
+				ondblclick="fun1()"
+				onmousedown="fun2()"
+				onmouseup="fun3()"
+				onmouseenter="fun4()"
+				onmouseleave="fun5()"
+				onmousemove="fun6()">
+			
+		</div>
+		
+		<input type="button" value="按钮" onmouseover="fun7()"/>
+	</body>
+</html>
