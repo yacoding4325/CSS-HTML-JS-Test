@@ -12,10 +12,34 @@
 			function fun2() {
 				window.close();
 			}
+			
+			function fun3() {
+				console.log(location.host);// 服务器的IP+端口号
+				console.log(location.hostname);// IP 
+				console.log(location.port);// 端口号
+				console.log(location.href);// 地址栏中具体的文字
+				location.href="https://www.baidu.com"
+			}
+			
+			function fun4() {
+				console.info(window.screen.width)
+				console.info(window.screen.height)
+				console.info(navigator.userAgent)
+				console.info(navigator.appName)
+			}
 		</script>
 	</head>
 	<body>
 		<input type="button" value="打开百度" onclick="fun1()" />
 		<input type="button" value="关闭百度" onclick="fun2()">
+		
+        <input type="button" value="测试location" onclick="fun3()" />
+		
+		
+		<!-- screen和navigator -->
+		<!-- screen代表屏幕,navigator代表浏览器软件本身,通过这两个对象可以获得屏幕和浏览器软件的一些信息 -->
+		
+		<body onload="fun4()">
+
 	</body>
 </html>
