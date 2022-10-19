@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 使用原生JS方式获得的页面结点对象我们可以简称为DOM对象,
+		使用jQuery核心函数获得的对象我们可以简称为jQuery对象,
+		这两种方式获得的对象即是是页面上同一个元素,那么也是不一样的,
+		二者之间的API是不通用的.而在某些情况下,我们往往无法选择接收的对象,
+		只能被动使用,那么这个时候我们可以让二者实现转换,
+		以达到可以调用API实现功能的目的-->
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script>
+			$(function(){
+				//1.原生js获取页面元素 原生DOM对象
+				var div1 = document.getElementById("d1");
+				
+				//2.jQuery方式获取页面元素 jQuery对象
+				var div2 = $("#d1");
+				/**
+				 * DOM对象和jQuery对象之间的方法和属性是不通用
+				 * 
+				 */
+				console.log(div1.innerText);
+				console.log(div2.text());
+				
+				console.log(div1)
+				console.log(div2)
+				
+				// DOM对象如何调用jQuery函数  DOM对象转换为jQuery    $(DOM)
+				console.log($(div1).text());
+				// jQuery对象如何调用DOM对象的属性和方法   jQuery转换为DOM对象  get(0)  [0]
+				console.log(div2.get(0).innerText)
+				console.log(div2[0].innerText)
+			})
+		</script>
+	</head>
+	<body>
+		<div id="d1">测试文字</div>
+	</body>
+</html>

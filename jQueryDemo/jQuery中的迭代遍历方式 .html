@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!-- jQuery给我们封装了一个快捷遍历元素的方法,接下来我们就使用一下jQuery中新的遍历方式 -->
+		<script>
+			$(function() {
+				var $lis = $("li")
+				console.info($lis)
+				for(var i = 0; i < $lis.length; i++) {
+					// console.info($lis[i].innerText)
+					console.info($lis[i].innerText)
+				}
+				for (var i in $lis) {
+					console.info($lis[i].innerText)
+				}
+				/*遍历所有元素的方法*/
+				  /*
+				   each每拿出一个元素 都会执行一次内部的function
+				   i 当前元素的所有
+				   e 当前元素 DOM对象
+				   *
+				   * */
+				    $lis.each(function (i,e){
+						console.info(i+'>>>'+$(e).text())
+					})
+					$.each($lis,function (i,e){
+						console.info(i+'>>>'+$(e).text())
+					})
+			})
+			
+		</script>
+	
+	</head>
+	<body>
+		<ul>
+			<li>AI</li>
+			<li>Python</li>
+			<li>大数据</li>
+			<li>JAVA</li>
+			<li>前端</li>
+		</ul>
+	</body>
+</html>
