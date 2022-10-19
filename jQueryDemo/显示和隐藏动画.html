@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 实现简单显示动画效果方法show()     
+			实现简单隐藏动画效果方法hide()           
+			实现切换简单显示和隐藏动画效果方法toggle() -->
+			
+		<!-- 实现向下滑动动画效果slideDown  实现向上滑动动画效果slideUp  
+		实现滑动切换动画效果slideToggle -->
+			<style>
+				#d1 {
+					width: 200px;
+					height: 200px;
+					background-color: green;
+					display: none;
+				}
+			</style>
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script>
+				function fun1() {
+					/**
+					 * 
+					 */
+					$("#d1").show(2000,'swing',function(){
+					    alert("动画执行结束")
+					})
+					$("#d1").show(2000);
+				}
+				
+				function fun2() {
+					$("#d1").hide(3000);
+				}
+				
+				function fun3() {
+					$("#d1").toggle(5000);
+				}
+				
+				function fun4() {
+					$("#d1").slideDown(2000);
+				}
+				
+				function fun5() {
+					$("#d1").slideUp(3000);
+				}
+				
+				function fun6() {
+					$("#d1").slideToggle(5000);
+				}
+				
+				function fun7(){
+						
+					$("#d1").fadeIn(2000);
+				}
+				function fun8(){
+						$("#d1").fadeOut(3000)
+				}
+				function fun9(){
+						$("#d1").fadeToggle(5000);
+				}
+				function fun10(){
+						$("#d1").fadeTo(5000,0.2);// 0-1 
+				}
+				
+			</script>
+	</head>
+	<body>
+		<div id="d1"></div>
+		<input type="button" value="show" onclick="fun1()">
+		<input type="button" value="hide" onclick="fun2()">
+		<input type="button" value="toggle" onclick="fun3()">
+		
+		<input type="button" value="slideDown" onclick="fun4()">
+		<input type="button" value="slideUp" onclick="fun5()">
+		<input type="button" value="slideToggle" onclick="fun6()">
+		
+		<!-- 淡入淡出动画效果
+		实现淡入动画效果方法fadeIn     
+		实现淡出动画效果方法fadeOut  
+		实现淡入淡出切换效果方法fadeToggle   
+		实现淡入之指定透明度效果方法fadeTo -->
+		<input type="button" value="fadeIn" onclick="fun7()" />
+		<input type="button" value="fadeOut" onclick="fun8()" />
+		<input type="button" value="fadeToggle" onclick="fun9()" />
+		<input type="button" value="fadeTo" onclick="fun10()" />
+	</body>
+</html>
