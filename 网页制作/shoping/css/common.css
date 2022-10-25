@@ -1,0 +1,346 @@
+/* 声明字体图标 这里一定要注意路径的变化 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?tomleg') format('truetype'), url('../fonts/icomoon.woff?tomleg') format('woff'), url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+/* 版心 */
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+
+/* 快捷导航模块 */
+
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+
+/* 选择所有的偶数的小li */
+
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+.arrow-icon::after {
+    /*设置尾元素图标*/
+    content: '\e91e';
+    /* 设置尾图标*/
+    font-family: 'icomoon';
+    margin-left: 6px;
+}
+
+
+/* header 头部制作 */
+
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../images/jd3.png) no-repeat;
+    font-size: 0;
+    /*文字隐藏*/
+    /*京东的做法*/
+    /*text-indent: -9999px;*/
+    overflow: hidden;
+}
+
+.search {
+    /*搜索样式*/
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    /*搜索框*/
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+.search button {
+    /*搜索按钮*/
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hotwords {
+    position: absolute;
+    /*定位*/
+    top: 66px;
+    left: 346px;
+}
+
+.hotwords a {
+    margin: 0 10px;
+}
+
+.shopcar {
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+    /*设置行间的距离(行高)*/
+    text-align: center;
+    /*text-align属性指定元素文本的水平对齐方式*/
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+}
+
+.shopcar::before {
+    content: '\e93a';
+    /*设置左图标并引入*/
+    font-family: 'icomoon';
+    margin-right: 10px;
+    color: #b1191a;
+}
+
+.shopcar::after {
+    /*设置右图标并引入*/
+    content: '\e920';
+    font-family: 'icomoon';
+    margin-left: 10px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #e60012;
+    padding: 0 5px;
+    /*padding 简写属性在一个声明中设置所有填充属性*/
+    border-radius: 7px 7px 7px 0;
+    /*这个属性允许你为元素添加圆角边框*/
+}
+
+
+/* nav模块制作 */
+
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav .dropdown {
+    /*一号盒子左浮动*/
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color: #b1191a;
+}
+
+.nav .navitems {
+    /*导航栏组*/
+    float: left;
+}
+
+
+/*dl是自定义列表；它包括dt和dd*/
+
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.dropdown .dd {
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+    margin-top: 2px;
+}
+
+.dropdown .dd ul li {
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    margin-left: 2px;
+    padding-left: 10px;
+}
+
+.dropdown .dd ul li:hover {
+    background-color: #fff;
+}
+
+.dropdown .dd ul li::after {
+    position: absolute;
+    /*将里面的尾元素定位*/
+    top: 1px;
+    right: 10px;
+    color: #fff;
+    font-family: 'icomoon';
+    /*声明图标*/
+    content: '\e920';
+    /*引入右箭头*/
+    font-size: 14px;
+}
+
+.dropdown .dd ul li a {
+    font-size: 14px;
+    /*设置元素的字体大小*/
+    color: #fff;
+}
+
+.dropdown .dd ul li:hover a {
+    /*hover择鼠标指针浮动在上面的元素*/
+    color: #c81623;
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 25px;
+    /*padding:设置填充数值*/
+}
+
+
+/* 底部模块制作 */
+
+.footer {
+    height: 415px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service ul li {
+    float: left;
+    /*浮动*/
+    width: 300px;
+    height: 50px;
+    padding-left: 35px;
+    /*距离左边框35px*/
+}
+
+.mod_service ul li h5 {
+    /*小图标*/
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url(../images/icons.png) no-repeat -252px -2px;
+    /*精灵图*/
+    /*小图标的位置*/
+    /*背景图像将仅显示一次*/
+    margin-right: 8px;
+}
+
+.service_txt h4 {
+    font-size: 14px;
+}
+
+.service_txt p {
+    /*设置字体大小*/
+    font-size: 12px;
+}
+
+.mod_help {
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+    /*设置一个声明中所有底部边框属性*/
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.mod_help dl {
+    float: left;
+    width: 200px;
+}
+
+.mod_help dl:last-child {
+    width: 90px;
+    /*最后一个的dl宽为90px*/
+    text-align: center;
+    /*指定元素文本的水平对齐方式*/
+}
+
+.mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+    /*设置元素的下边距*/
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+.links a {
+    margin: 0 3px;
+}
+
+.copyright {
+    line-height: 20px;
+}

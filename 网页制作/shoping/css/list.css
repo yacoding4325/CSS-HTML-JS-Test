@@ -1,0 +1,82 @@
+/* 列表页专有的css */
+
+
+/*将首页的头部和底部的结构复制过来*/
+
+
+/*头部底部的样式也需要，在list.html中还要引入common.css*/
+
+.nav {
+    overflow: hidden;
+    /*溢出隐藏*/
+}
+
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    /*规定元素应该生成的框的类型。*/
+    line-height: 47px;
+    /*设置行间的距离（行高）*/
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    /*设置文本的粗细*/
+    color: #000;
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+}
+
+.sk_con ul li a {
+    display: block;
+    line-height: 49px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.sk_con ul li:last-child a::after {
+    content: '\e91e';
+    /*设置图标和声明*/
+    font-family: 'icomoon';
+}
+
+.sk_bd ul li {
+    overflow: hidden;
+    /*超出的部分将会被隐藏，不占位*/
+    float: left;
+    margin-right: 13px;
+    width: 290px;
+    height: 460px;
+    border: 1px solid transparent;
+    /*本身含有1像素边框
+    ，鼠标经过时让其不显示就行*/
+}
+
+.sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+    /*最后一个不需要外边距*/
+}
+
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}
