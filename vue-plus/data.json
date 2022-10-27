@@ -1,0 +1,12 @@
+{
+    "success": true,
+    "code": 20000,
+    "message": "成功",
+    "data": {
+        "items":[
+            {"name": "刘洪涛","age": 15},
+            {"name": "红桃六","age": 20},
+            {"name": "Hongtao Liu","age": 25}
+        ]
+    }
+}
