@@ -1,0 +1,19 @@
+<script>
+    //1、多行字符串
+    let string1 = `你好，
+    请问你是刘洪涛吗？`
+    console.log(string1)
+
+    //2、字符串插入变量、表达式
+    let name = "刘洪涛"
+    let age = 20
+    let info = `我叫${name},我明年${age+1}岁。`
+    console.log(info)
+
+    //3、字符串调用函数
+    function f(){
+        return '调用函数！'
+    }
+    let string2 = `你好，${f()}`
+    console.log(string2) 
+</script>
